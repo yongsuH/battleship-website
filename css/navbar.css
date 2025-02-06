@@ -1,0 +1,55 @@
+/* 导航栏样式 */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    position: fixed;  /* 🔥 让导航栏固定在顶部 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 1000;
+}
+
+/* Logo 样式 */
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* 导航链接 */
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+}
+
+/* 当前页面的链接高亮 */
+.nav-links a.active {
+    border-bottom: 3px solid yellow;
+}
+
+/* 鼠标悬停效果 */
+.nav-links a:hover {
+    color: lightblue;
+}
+
+/* 让页面内容不会被导航栏覆盖 */
+body {
+    padding-top: 80px; /* 💡 避免被固定的导航栏挡住内容 */
+}
