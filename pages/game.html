@@ -29,7 +29,7 @@
 
         <!-- ✅ 计时器 -->
         <div class="game-info">
-            <p>Time Elapsed: <span id="timer">00:02:35</span></p>
+            <p>Time Elapsed: <span id="timer">00:01:05</span></p>
             <button class="restart-button">Restart</button>
         </div>
 
@@ -37,6 +37,119 @@
         <div class="game-boards">
             <div class="board">
                 <h2>Player Board</h2>
+                <div class="grid">
+                    <!-- 1st row -->
+                    <div class="cell">⚫</div>
+                    <div class="cell">⚫</div>
+                    <div class="cell">⚫</div>
+                    <div class="cell">⚫</div>
+                    <div class="cell">⚫</div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                
+                    <!-- 2nd row -->
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell cell-cross">✖</div> 
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                
+                    <!-- 3rd row -->
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell">⚫</div>
+                    <div class="cell cell-check">✔</div> 
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                
+                    <!-- 4th row... -->
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell">⚫</div>
+                    <div class="cell cell-check">✔</div> 
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+
+                    <!-- 5th row... -->
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell cell-cross">✖</div>
+                    <div class="cell">⚫</div>
+                    <div class="cell">⚫</div>
+                    <div class="cell"></div>
+
+                    <!-- 6th row... -->
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell">⚫</div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+
+                    <!-- 7th row... -->
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell">⚫</div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+
+                    <!-- 8th row... -->
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell">⚫</div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+
+                    <!-- 9th row... -->
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell">⚫</div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div> 
+            </div>
+
+            <div class="board">
+                <h2>Enemy Board</h2>
                 <div class="grid">
                     <!-- 1st row -->
                     <div class="cell"></div>
@@ -53,11 +166,11 @@
                     <!-- 2nd row -->
                     <div class="cell"></div>
                     <div class="cell"></div>
-                    <div class="cell cell-hit">✔</div> 
+                    <div class="cell cell-check">✔</div> 
                     <div class="cell"></div>
                     <div class="cell"></div>
                     <div class="cell"></div>
-                    <div class="cell"></div>
+                    <div class="cell cell-cross">✖</div>
                     <div class="cell"></div>
                     <div class="cell"></div>
                     <div class="cell"></div>
@@ -66,7 +179,7 @@
                     <div class="cell"></div>
                     <div class="cell"></div>
                     <div class="cell"></div>
-                    <div class="cell">✖</div> 
+                    <div class="cell"></div> 
                     <div class="cell"></div>
                     <div class="cell"></div>
                     <div class="cell"></div>
@@ -78,7 +191,7 @@
                     <div class="cell"></div>
                     <div class="cell"></div>
                     <div class="cell"></div>
-                    <div class="cell">✖</div>
+                    <div class="cell"></div>
                     <div class="cell"></div>
                     <div class="cell"></div>
                     <div class="cell"></div>
@@ -89,7 +202,7 @@
                     <!-- 5th row... -->
                     <div class="cell"></div>
                     <div class="cell"></div>
-                    <div class="cell"></div>
+                    <div class="cell cell-cross">✖</div>
                     <div class="cell"></div>
                     <div class="cell"></div>
                     <div class="cell"></div>
@@ -102,11 +215,11 @@
                     <div class="cell"></div>
                     <div class="cell"></div>
                     <div class="cell"></div>
-                    <div class="cell">✖</div>
                     <div class="cell"></div>
                     <div class="cell"></div>
                     <div class="cell"></div>
-                    <div class="cell"></div>
+                    <div class="cell cell-cross">✖</div>
+                    <div class="cell cell-cross">✖</div> 
                     <div class="cell"></div>
                     <div class="cell"></div>
 
@@ -114,11 +227,11 @@
                     <div class="cell"></div>
                     <div class="cell"></div>
                     <div class="cell"></div>
-                    <div class="cell">✖</div>
                     <div class="cell"></div>
                     <div class="cell"></div>
                     <div class="cell"></div>
                     <div class="cell"></div>
+                    <div class="cell cell-check">✔</div>
                     <div class="cell"></div>
                     <div class="cell"></div>
 
@@ -126,11 +239,11 @@
                     <div class="cell"></div>
                     <div class="cell"></div>
                     <div class="cell"></div>
-                    <div class="cell">✖</div>
                     <div class="cell"></div>
                     <div class="cell"></div>
                     <div class="cell"></div>
                     <div class="cell"></div>
+                    <div class="cell cell-check">✔</div>
                     <div class="cell"></div>
                     <div class="cell"></div>
 
@@ -138,129 +251,13 @@
                     <div class="cell"></div>
                     <div class="cell"></div>
                     <div class="cell"></div>
-                    <div class="cell">✖</div>
                     <div class="cell"></div>
                     <div class="cell"></div>
                     <div class="cell"></div>
                     <div class="cell"></div>
+                    <div class="cell cell-check">✔</div>
                     <div class="cell"></div>
                     <div class="cell"></div>
-                </div>
-                
-            </div>
-
-            <div class="board">
-                <h2>Enemy Board</h2>
-                <div class="grid">
-                    <div class="grid">
-                        <!-- 1st row -->
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                    
-                        <!-- 2nd row -->
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell cell-hit">✔</div> 
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                    
-                        <!-- 3rd row -->
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell">✖</div> 
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                    
-                        <!-- 4th row... -->
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell">✖</div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-    
-                        <!-- 5th row... -->
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-    
-                        <!-- 6th row... -->
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell">✖</div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-    
-                        <!-- 7th row... -->
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell">✖</div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-    
-                        <!-- 8th row... -->
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell">✖</div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-    
-                        <!-- 9th row... -->
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell">✖</div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                        <div class="cell"></div>
-                    </div>
                 </div>
             </div>
         </div>

@@ -1,3 +1,23 @@
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.restart-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.restart-button:hover {
+    background-color: darkred;
+}
 /* 📌 10x9 棋盘 */
 .grid {
     display: grid;
@@ -35,13 +55,13 @@
 }
 
 /* ✅ 命中（✔）样式 */
-.cell-hit {
+.cell-check {
     background-color: green !important;
     color: white;
 }
 
 /* ✅ 未命中（✖）样式 */
-.cell-miss {
+.cell-cross {
     background-color: red !important;
     color: white;
 }
