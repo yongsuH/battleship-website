@@ -1,3 +1,8 @@
+/* 📌 让整个网页最小宽度 500px */
+html, body {
+    min-width: 500px; /* ✅ 页面不会缩小到 500px 以下 */
+}
+
 body {
     background-image: url('../assets/battleship.jpeg'); /* 设置背景图片 */
     background-size: cover;  /* 让背景图片覆盖整个页面 */
@@ -155,6 +160,7 @@ nav ul li a {
     body {
         background-size: auto; /* 宽度铺满 */
         background-position: top center;
+        margin-left: 140px;
     }
 }
 

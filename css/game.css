@@ -65,3 +65,33 @@
     background-color: red !important;
     color: white;
 }
+
+/* 📌 适配 1280px 以下，缩小 cell */
+@media (max-width: 1280px) {
+    .grid {
+        grid-template-columns: repeat(10, 30px); /* ✅ 每格缩小为 30px */
+        grid-template-rows: repeat(9, 30px);
+        gap: 3px; /* ✅ 减少间距 */
+    }
+    .cell {
+        width: 30px;
+        height: 30px;
+        font-size: 16px; /* ✅ 调整字体大小 */
+    }
+}
+
+/* 📌 适配 768px 以下，棋盘变成纵向排列 */
+@media (max-width: 768px) {
+    .game-boards {
+        flex-direction: column; /* ✅ 让棋盘垂直排列 */
+        align-items: center; /* ✅ 居中对齐 */
+        gap: 20px; /* ✅ 增加棋盘间距 */
+    }
+    .board {
+        width: 100%; /* ✅ 让棋盘撑满 */
+    }
+    /* 📌 确保 `body` 不会被导航栏遮挡 */
+    body {
+        margin-left: 140px; /* 让页面内容右移 */
+    }
+}
