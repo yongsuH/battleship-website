@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #333;
-    padding: 10px 20px;
+    padding: 10px 20px;  /* 依次是 上 右 下 左 */
     position: fixed;  /* 🔥 让导航栏固定在顶部 */
     top: 0;
     left: 0;
@@ -37,6 +37,7 @@
     color: white;
     font-size: 18px;
     padding: 10px;
+    z-index: 1001; 
 }
 
 /* 当前页面的链接高亮 */
@@ -53,3 +54,53 @@
 body {
     padding-top: 80px; /* 💡 避免被固定的导航栏挡住内容 */
 }
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100px; /* 导航栏固定宽度 */
+        height: 100vh; /* 让导航栏覆盖整个屏幕高度 */
+        min-height: 100vh;
+        padding: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: flex-start; /* ✅ 让内容靠上 */
+    }
+
+    /* ✅ 确保 `.nav-links` 靠近顶部 */
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 0;
+        margin: 0; /* ✅ 去掉额外间距 */
+        gap: 10px; /* ✅ 让菜单有间距 */
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 10px;
+        width: 100%;
+        text-align: left;
+        font-size: 16px; 
+    }
+    .logo{
+        font-size: 22px;
+    }
+
+    /* 📌 确保 `body` 不会被导航栏遮挡 */
+    body {
+        margin-left: 140px; /* 让页面内容右移 */
+    }
+}
+
+
