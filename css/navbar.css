@@ -1,11 +1,11 @@
-/* 导航栏样式 */
+/* nav style */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #333;
-    padding: 10px 20px;  /* 依次是 上 右 下 左 */
-    position: fixed;  /* 🔥 让导航栏固定在顶部 */
+    padding: 10px 20px; 
+    position: fixed;  /* fixed postition */
     top: 0;
     left: 0;
     width: 100%;
@@ -13,14 +13,14 @@
     z-index: 1000;
 }
 
-/* Logo 样式 */
+/* Logo style */
 .logo {
     color: white;
     font-size: 24px;
     font-weight: bold;
 }
 
-/* 导航链接 */
+/* nav links */
 .nav-links {
     list-style: none;
     display: flex;
@@ -40,19 +40,19 @@
     z-index: 1001; 
 }
 
-/* 当前页面的链接高亮 */
+/* high light current page*/
 .nav-links a.active {
     border-bottom: 3px solid yellow;
 }
 
-/* 鼠标悬停效果 */
+/* hover change color */
 .nav-links a:hover {
     color: lightblue;
 }
 
-/* 让页面内容不会被导航栏覆盖 */
+
 body {
-    padding-top: 80px; /* 💡 避免被固定的导航栏挡住内容 */
+    padding-top: 9vh; 
 }
 
 
@@ -60,26 +60,25 @@ body {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
-        width: 20vw; /* 导航栏固定宽度 */
-        height: 200vh; /* 让导航栏覆盖整个屏幕高度 */
+        width: 20vw; 
+        height: 200vh; 
         min-height: 100vh;
         padding: 20px;
         position: fixed;
         top: 0;
         left: 0;
         display: flex;
-        justify-content: flex-start; /* ✅ 让内容靠上 */
+        justify-content: flex-start; 
     }
 
-    /* ✅ 确保 `.nav-links` 靠近顶部 */
     .nav-links {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
         padding: 0;
-        margin: 0; /* ✅ 去掉额外间距 */
-        gap: 10px; /* ✅ 让菜单有间距 */
+        margin: 0; 
+        gap: 10px; 
     }
 
     .nav-links li {
@@ -97,9 +96,8 @@ body {
         font-size: 20px;
     }
 
-    /* 📌 确保 `body` 不会被导航栏遮挡 */
     body {
-        margin-left: calc(25vw + 10px); /* 让页面内容右移 */
+        margin-left: calc(25vw + 10px); /* contents shift right */
     }
 }
 

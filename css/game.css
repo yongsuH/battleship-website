@@ -68,38 +68,38 @@
     color: white;
 }
 
-/* 适配 1280px smaller cell */
+/* 1280px smaller cell */
 @media (max-width: 1280px) {
     .grid {
-        grid-template-columns: repeat(10, 30px); /* ✅ 每格缩小为 30px */
+        grid-template-columns: repeat(10, 30px); 
         grid-template-rows: repeat(9, 30px);
-        gap: 3px; /* ✅ 减少间距 */
+        gap: 3px; /* smaller gap */
     }
     .cell {
         width: 30px;
         height: 30px;
-        font-size: 16px; /* ✅ 调整字体大小 */
+        font-size: 16px; /* smaller font */
     }
 }
 
-/* 📌 适配 768px 以下，棋盘变成纵向排列 */
+/* 适配 768px veritcal boards arrangement */
 @media (max-width: 768px) {
     .game-boards {
-        flex-direction: column; /* ✅ 让棋盘垂直排列 */
-        align-items: center; /* ✅ 居中对齐 */
-        gap: 20px; /* ✅ 增加棋盘间距 */
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; 
     }
     .grid {
-        grid-template-columns: repeat(10, 20px); /* ✅ 每格缩小为 30px */
+        grid-template-columns: repeat(10, 20px); /* smaller font */
         grid-template-rows: repeat(9, 20px);
-        gap: 3px; /* ✅ 减少间距 */
+        gap: 3px; /* smaller gap */
     }
     .cell {
         width: 20px;
         height: 20px;
-        font-size: 12px; /* ✅ 调整字体大小 */
+        font-size: 12px; /* smaller font */
     }
     .board {
-        width: 100%; /* ✅ 让棋盘撑满 */
+        width: 100%; 
     }
 }
