@@ -29,7 +29,7 @@
 }
 
 .nav-links li {
-    margin: 0 15px;
+    margin: 0 0px;
 }
 
 .nav-links a {
@@ -60,8 +60,8 @@ body {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
-        width: 100px; /* 导航栏固定宽度 */
-        height: 100vh; /* 让导航栏覆盖整个屏幕高度 */
+        width: 20vw; /* 导航栏固定宽度 */
+        height: 200vh; /* 让导航栏覆盖整个屏幕高度 */
         min-height: 100vh;
         padding: 20px;
         position: fixed;
@@ -88,18 +88,18 @@ body {
 
     .nav-links a {
         display: block;
-        padding: 10px;
+        padding: 5px;
         width: 100%;
         text-align: left;
-        font-size: 16px; 
+        font-size: 14px; 
     }
     .logo{
-        font-size: 22px;
+        font-size: 20px;
     }
 
     /* 📌 确保 `body` 不会被导航栏遮挡 */
     body {
-        margin-left: 140px; /* 让页面内容右移 */
+        margin-left: calc(25vw + 10px); /* 让页面内容右移 */
     }
 }
 

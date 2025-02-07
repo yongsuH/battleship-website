@@ -1,8 +1,3 @@
-/* 📌 让整个网页最小宽度 500px */
-html, body {
-    min-width: 500px; /* ✅ 页面不会缩小到 500px 以下 */
-}
-
 body {
     background-image: url('../assets/battleship.jpeg'); /* 设置背景图片 */
     background-size: cover;  /* 让背景图片覆盖整个页面 */
@@ -14,7 +9,8 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     color: white;  /* 文字颜色设置为白色，提高可读性 */
     text-align: center;
@@ -39,113 +35,6 @@ nav ul li a {
 }
 
 
-.rules-container {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    text-align: left;
-}
-
-.rules-container h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: white;
-}
-
-.rules-container h2 {
-    color: whitesmoke;
-    margin-top: 20px;
-}
-
-.rules-container p,
-.rules-container ul,
-.rules-container ol {
-    font-size: 16px;
-    line-height: 1.6;
-    color: white;
-}
-
-.rules-container ul,
-.rules-container ol {
-    padding-left: 20px;
-}
-
-/* Credits style */
-.credits {
-    margin-top: 40px;
-    padding: 20px;
-    background-color: #3d30ef63;
-    border-radius: 8px;
-    text-align: center;
-}
-
-.credits h2 {
-    color: #222;
-}
-
-.credits-links {
-    list-style: none;
-    padding: 0;
-    margin-top: 10px;
-}
-
-.credits-links li {
-    display: inline;
-    margin: 0 10px;
-}
-
-.credits-links a {
-    text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
-}
-
-.credits-links a:hover {
-    text-decoration: underline;
-}
-
-/* 📌 排行榜页面布局 */
-.scores-container {
-    max-width: 1800px;
-    margin: auto;
-    padding: 20px;
-    text-align: center;
-    /* ✅ 让内容居中 */
-    display: flex;
-    flex-direction: column;
-    min-height: calc(100vh - 80px);
-}
-
-/* 📌 表格样式 */
-.scores-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-}
-
-/* 📌 表头样式 */
-.scores-table thead {
-    background-color: #333;
-    color: white;
-}
-
-.scores-table th, .scores-table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    font-size: 16px;
-}
-
-/* 📌 隔行变色，提高可读性 */
-.scores-table tbody tr:nth-child(even) {
-    background-color: #f4f4f458;
-}
-
-/* 📌 鼠标悬停效果 */
-.scores-table tbody tr:hover {
-    background-color: rgba(189, 225, 12, 0.452);
-}
-
-
 /* ✅ 适配小屏幕笔记本 (1280px 以下) */
 @media (max-width: 1280px) {
     body {
@@ -160,7 +49,6 @@ nav ul li a {
     body {
         background-size: auto; /* 宽度铺满 */
         background-position: top center;
-        margin-left: 140px;
     }
 }
 
