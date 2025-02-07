@@ -20,6 +20,13 @@
     font-weight: bold;
 }
 
+.logo-icon {
+    width: 2vw; 
+    height: auto; 
+    vertical-align: middle; 
+    margin-right: 10px; 
+}
+
 /* nav links */
 .nav-links {
     list-style: none;
